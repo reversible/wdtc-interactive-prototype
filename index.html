@@ -29,75 +29,225 @@
 
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">Project name</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form pull-right">
-                            <input class="span2" type="text" placeholder="Email">
-                            <input class="span2" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Sign in</button>
-                        </form>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
+     
 
         <div class="container">
 
+        <div class="header row-fluid">
+            
+                 <div class="span3">
+                    <h1> Team Maker </h1> 
+                 </div>
+
+                <div class="span9" style="padding-top:10px;padding-right:10px;">
+                    <ul class="nav nav-pills pull-right">  
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                   <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">John Doe <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Logout</a></li>
+                          <li><a href="#">Something</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  
+               </div>
+
+        </div>
+
+<hr />
+
             <!-- Main hero unit for a primary marketing message or call to action -->
+            
+    <div class="row-fluid">
+
+            <div class="span5" style="background:black;height:373px;">
+
+            </div>
+
+
+            <div class="span7">                
             <div class="hero-unit">
                 <h1>Hello, world!</h1>
                 <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
                 <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
             </div>
+            </div>
+
+
+    </div>
+
+    <blockquote>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+        </p>
+        <small> Steve Jobs, <cite title="Source Title">Director at Apple.</cite></small>
+    </blockquote>
+
+        <br />
+
+        <div class="page-header">
+            <h1>Talented People</h1>
+          </div>
+
 
             <!-- Example row of columns -->
-            <div class="row">
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+            <div class="row-fluid media-container">
+
+                
+
+                <!-- First Row-->
+
+
+                <div class="span4">   
+
+                <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
                 </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
-               </div>
-                <div class="span4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+
+
+                <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
                 </div>
+
+
+
+                 <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+   
+            </div>
+
+<!-- Second Row -->
+
+
+                <div class="span4">   
+
+                <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+
+                <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+
+
+                 <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+   
+            </div>
+
+
+<!-- Third Row-->
+
+                 <div class="span4">   
+
+                <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+
+                <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+
+
+                 <div class="media">
+                <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACnklEQVR4Xu2Y20tqQRTGP8kErwk+qFiGKFHii6KiD+I/L96SwkShiLyBGqKiUoRSdtYCo8Oh02mGOOFeAxvZ7D1rZn3zzfq5xzSdTjcwcDOJAOIA2QJSAwxcAyFFUCggFBAKCAWEAgZWQDAoGBQMCgYFgwaGgHwMCQYFg4JBwaBgUDBoYAW0MbhYLNBqtfD4+AiHw4FoNMq/71uj0cD9/T1OTk4QDAY/lfs7Yn40qJYAz8/PKBaLMJvN8Pl86PV6cDqdSCQSb+PNZjNcXFxgs9n8kwDfEfNvimsJMB6PUa/XkUwm4XK58PLywmJsGyVdqVT42WAweBPg7u4OdFE/t9uNq6srTCYTZLNZLJdLpZif2uqDF7QE2CYSCAQ4QYvFwlvA4/HwcP1+H91uF/F4HKVS6U0AEqparcJkMiESieDy8hJnZ2egOKox/4sANzc3bHuv18sX3dOq53I5rNdr3h6np6c4ODhAoVD4bQvM53Ocn5+zY8gh222jE1NFBC0H3N7eotPpIJPJcOHb3pMA7Xab7Uyr//T0hHK5zKt9dHSEvb09niu5gApeLBbjGkJNN+ZXRdASYDgcotlscpJk++vra7Z9Pp9HrVbDw8PDH/MJhUIIh8NMBaKD3W7n2kEikjA6Mb+aPL2vJQDZnKxttVrh9/t51W02G9LpNMjilBi11WrFyR4eHuL4+Bj7+/tcE2hrkBjkDnIGYVI1Js1BpWkJQAP++prklSeb016mYkYivG/07H0NoP8No9GIqz5NnPY9OSeVSnEMlZgqyWs7QHXQn9RP2wE/KRmVuYgAciIkJ0JyIiQnQirVc1f6CAWEAkIBoYBQYFcqukoeQgGhgFBAKCAUUKmeu9JHKCAUEAoIBYQCu1LRVfIQChidAq8O6n6fT8cH8QAAAABJRU5ErkJggg==">
+              </a>
+
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. <a href="#">View More...</a>
+              </div>
+                
+                </div>
+
+   
+            </div>
+
+
             </div>
 
             <hr>
 
             <footer>
-                <p>&copy; Company 2012</p>
+                <p>Team Maker  &copy; Branchcore 2012</p>
             </footer>
 
         </div> <!-- /container -->
